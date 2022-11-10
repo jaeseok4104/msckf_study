@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmsckf_lib.a CMakeFiles/msckf_lib.dir/src/error_term.cpp.o CMakeFiles/msckf_lib.dir/src/math.cpp.o
+/usr/bin/ranlib libmsckf_lib.a
