@@ -14,7 +14,10 @@ namespace custom_msckf{
          jaccobian << -Math::SkewSymmetricMat(x_estimate->block<3,3>(0,0) * p), Eigen::Matrix3d::Identity();
          Eigen::VectorXd delta_x(6);
          delta_x = (jaccobian.transpose()*jaccobian).inverse()*jaccobian.transpose() * b;
-         Eigen::Matrix4d dt(Math::AxisVectorToMatrix(Eigen::Vector3d(delta_x(0), delta_x(1), delta_x(2))), Eigen::Vector3d(delta_x(3), delta_x(4), delta_x(5)));
+         Eigen::Matrix4d dt;
+         dt.Zero();
+         dt.block(0,0,2,2) << Math::AxisVectorToMatrix(Eigen::Vector3d(delta_x(0), delta_x(1), delta_x(2)));
+         dt.block(0,3,2,3) << Eigen::Vector3d(delta_x(3), delta_x(4), delta_x(5));
          dt(3,3) = 1; // Homogeneous coordinate
          *x_estimate = dt * (*x_estimate);
          return true;

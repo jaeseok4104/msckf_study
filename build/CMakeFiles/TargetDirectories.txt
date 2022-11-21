@@ -1,5 +1,0 @@
-/home/park/work/personal/msckf_study/build/CMakeFiles/edit_cache.dir
-/home/park/work/personal/msckf_study/build/CMakeFiles/rebuild_cache.dir
-/home/park/work/personal/msckf_study/build/custom_msckf/CMakeFiles/msckf_lib.dir
-/home/park/work/personal/msckf_study/build/custom_msckf/CMakeFiles/edit_cache.dir
-/home/park/work/personal/msckf_study/build/custom_msckf/CMakeFiles/rebuild_cache.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmsckf_lib.a CMakeFiles/msckf_lib.dir/src/math.cpp.o CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o
-/usr/bin/ranlib libmsckf_lib.a
