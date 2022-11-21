@@ -2,6 +2,7 @@
 #define CUSTOM_MSCKF_MATH
 
 #include <Eigen/Eigen>
+#include <iostream>
 #include <math.h>
 
 namespace custom_msckf {
