@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "custom_msckf",
+					"jsonFile" : "directory-custom_msckf-Debug-dde307799df31359b1e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "custom_msckf",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "msckf_study"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "custom_msckf",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "msckf_lib::@1b35ae74792e30d97f42",
+					"jsonFile" : "target-msckf_lib-Debug-c8bf17ad3a8e4015819d.json",
+					"name" : "msckf_lib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/park/work/personal/msckf_study/build",
+		"source" : "/home/park/work/personal/msckf_study"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

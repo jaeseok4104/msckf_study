@@ -69,24 +69,10 @@ include custom_msckf/CMakeFiles/msckf_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include custom_msckf/CMakeFiles/msckf_lib.dir/flags.make
 
-custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/flags.make
-custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o: ../custom_msckf/src/error_term.cpp
-custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/park/work/personal/msckf_study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o"
-	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o -MF CMakeFiles/msckf_lib.dir/src/error_term.cpp.o.d -o CMakeFiles/msckf_lib.dir/src/error_term.cpp.o -c /home/park/work/personal/msckf_study/custom_msckf/src/error_term.cpp
-
-custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/msckf_lib.dir/src/error_term.cpp.i"
-	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/park/work/personal/msckf_study/custom_msckf/src/error_term.cpp > CMakeFiles/msckf_lib.dir/src/error_term.cpp.i
-
-custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msckf_lib.dir/src/error_term.cpp.s"
-	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/park/work/personal/msckf_study/custom_msckf/src/error_term.cpp -o CMakeFiles/msckf_lib.dir/src/error_term.cpp.s
-
 custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/flags.make
 custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o: ../custom_msckf/src/math.cpp
 custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/park/work/personal/msckf_study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/park/work/personal/msckf_study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o"
 	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o -MF CMakeFiles/msckf_lib.dir/src/math.cpp.o.d -o CMakeFiles/msckf_lib.dir/src/math.cpp.o -c /home/park/work/personal/msckf_study/custom_msckf/src/math.cpp
 
 custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.i: cmake_force
@@ -97,16 +83,30 @@ custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msckf_lib.dir/src/math.cpp.s"
 	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/park/work/personal/msckf_study/custom_msckf/src/math.cpp -o CMakeFiles/msckf_lib.dir/src/math.cpp.s
 
+custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/flags.make
+custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o: ../custom_msckf/src/point_to_point_icp.cpp
+custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o: custom_msckf/CMakeFiles/msckf_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/park/work/personal/msckf_study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o"
+	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o -MF CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o.d -o CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o -c /home/park/work/personal/msckf_study/custom_msckf/src/point_to_point_icp.cpp
+
+custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.i"
+	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/park/work/personal/msckf_study/custom_msckf/src/point_to_point_icp.cpp > CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.i
+
+custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.s"
+	cd /home/park/work/personal/msckf_study/build/custom_msckf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/park/work/personal/msckf_study/custom_msckf/src/point_to_point_icp.cpp -o CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.s
+
 # Object files for target msckf_lib
 msckf_lib_OBJECTS = \
-"CMakeFiles/msckf_lib.dir/src/error_term.cpp.o" \
-"CMakeFiles/msckf_lib.dir/src/math.cpp.o"
+"CMakeFiles/msckf_lib.dir/src/math.cpp.o" \
+"CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o"
 
 # External object files for target msckf_lib
 msckf_lib_EXTERNAL_OBJECTS =
 
-custom_msckf/libmsckf_lib.a: custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o
 custom_msckf/libmsckf_lib.a: custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.o
+custom_msckf/libmsckf_lib.a: custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o
 custom_msckf/libmsckf_lib.a: custom_msckf/CMakeFiles/msckf_lib.dir/build.make
 custom_msckf/libmsckf_lib.a: custom_msckf/CMakeFiles/msckf_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/park/work/personal/msckf_study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmsckf_lib.a"

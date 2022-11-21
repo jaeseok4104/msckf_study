@@ -31,4 +31,9 @@ Eigen::Vector3d Math::TransformationPoint(const Eigen::Matrix4d& T, const Eigen:
     return T.block<3,3>(0,0) * p + T.block<3,1>(0,3);
 }
 
+Eigen::Matrix4d Math::TransformationVectorInverse(const Eigen::VectorXd& T_vector){
+    
+}
+
+
 }

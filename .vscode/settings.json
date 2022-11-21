@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "eigen": "cpp",
-        "cmath": "cpp",
-        "*.tcc": "cpp"
-    }
-}

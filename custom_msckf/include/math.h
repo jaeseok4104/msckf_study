@@ -12,7 +12,7 @@ public:
     static Eigen::Matrix3d AxisVectorToMatrix(const Eigen::Vector3d& rot_vec);
     static Eigen::Matrix3d SkewSymmetricMat(const Eigen::Vector3d& rot_vec);
     static Eigen::Vector3d TransformationPoint(const Eigen::Matrix4d& T, const Eigen::Vector3d p);
-    static Eigen::Matrix4d TransformationVectorInverse(const Eigen::Vector6d& T_vector);
+    static Eigen::Matrix4d TransformationVectorInverse(const Eigen::VectorXd& T_vector);
 };
 
 }

@@ -130,30 +130,6 @@ msckf_lib/fast:
 	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/build
 .PHONY : msckf_lib/fast
 
-src/error_term.o: src/error_term.cpp.o
-.PHONY : src/error_term.o
-
-# target to build an object file
-src/error_term.cpp.o:
-	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.o
-.PHONY : src/error_term.cpp.o
-
-src/error_term.i: src/error_term.cpp.i
-.PHONY : src/error_term.i
-
-# target to preprocess a source file
-src/error_term.cpp.i:
-	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.i
-.PHONY : src/error_term.cpp.i
-
-src/error_term.s: src/error_term.cpp.s
-.PHONY : src/error_term.s
-
-# target to generate assembly for a file
-src/error_term.cpp.s:
-	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/error_term.cpp.s
-.PHONY : src/error_term.cpp.s
-
 src/math.o: src/math.cpp.o
 .PHONY : src/math.o
 
@@ -178,6 +154,30 @@ src/math.cpp.s:
 	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/math.cpp.s
 .PHONY : src/math.cpp.s
 
+src/point_to_point_icp.o: src/point_to_point_icp.cpp.o
+.PHONY : src/point_to_point_icp.o
+
+# target to build an object file
+src/point_to_point_icp.cpp.o:
+	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.o
+.PHONY : src/point_to_point_icp.cpp.o
+
+src/point_to_point_icp.i: src/point_to_point_icp.cpp.i
+.PHONY : src/point_to_point_icp.i
+
+# target to preprocess a source file
+src/point_to_point_icp.cpp.i:
+	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.i
+.PHONY : src/point_to_point_icp.cpp.i
+
+src/point_to_point_icp.s: src/point_to_point_icp.cpp.s
+.PHONY : src/point_to_point_icp.s
+
+# target to generate assembly for a file
+src/point_to_point_icp.cpp.s:
+	cd /home/park/work/personal/msckf_study/build && $(MAKE) $(MAKESILENT) -f custom_msckf/CMakeFiles/msckf_lib.dir/build.make custom_msckf/CMakeFiles/msckf_lib.dir/src/point_to_point_icp.cpp.s
+.PHONY : src/point_to_point_icp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -187,12 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... msckf_lib"
-	@echo "... src/error_term.o"
-	@echo "... src/error_term.i"
-	@echo "... src/error_term.s"
 	@echo "... src/math.o"
 	@echo "... src/math.i"
 	@echo "... src/math.s"
+	@echo "... src/point_to_point_icp.o"
+	@echo "... src/point_to_point_icp.i"
+	@echo "... src/point_to_point_icp.s"
 .PHONY : help
 
 

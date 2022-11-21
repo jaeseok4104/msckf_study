@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/park/work/personal/msckf_study/custom_msckf/.. -isystem /usr/local/include/eigen3
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 
