@@ -9,9 +9,9 @@ namespace custom_msckf {
 TEST(Math, AxisMatrixToVector) {
     Eigen::Matrix3d r;
     Eigen::Vector3d r_vector;
-    r = Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitZ()) *
-        Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitY()) *
-        Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitX());
+    r = Eigen::AngleAxisd(M_PI_2 * 0.3, Eigen::Vector3d::UnitZ()) *
+        Eigen::AngleAxisd(M_PI_2 * 0.2, Eigen::Vector3d::UnitY()) *
+        Eigen::AngleAxisd(M_PI_2 * 0.1, Eigen::Vector3d::UnitX());
     r_vector = Math::AxisMatrixToVector(r);
     Eigen::Matrix3d result = Math::AxisVectorToMatrix(r_vector);
 
@@ -20,7 +20,7 @@ TEST(Math, AxisMatrixToVector) {
     std::cout << result << std::endl;
     for(int i = 0; i < 3; i++)
         for(int j = 0; j < 3; j++)
-            EXPECT_NEAR(r(i,j),result(i,j),0.0000001);
+            EXPECT_NEAR(r(i,j), result(i,j), 0.0000001);
 }
 
 TEST(Math, TransformationPoint) {
@@ -29,10 +29,10 @@ TEST(Math, TransformationPoint) {
     Eigen::Vector3d point;
     Eigen::Vector4d point_homo;
     T.setIdentity();
-    // r = Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitZ()) *
-    //     Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitY()) *
-    //     Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitX());
-    // T.block<3,3>(0,0) = r;
+    r = Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitZ()) *
+        Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitY()) *
+        Eigen::AngleAxisd(M_PI_2, Eigen::Vector3d::UnitX());
+    T.block<3,3>(0,0) = r;
     T.block<3,1>(0,3) = Eigen::Vector3d(5,0,0);
     point = Eigen::Vector3d(0, 0, 0);
     point_homo = Eigen::Vector4d(0, 0, 0, 1);

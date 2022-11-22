@@ -3,11 +3,11 @@
 namespace custom_msckf {
 
 Eigen::Vector3d Math::AxisMatrixToVector(const Eigen::Matrix3d& rot_mat) {
-    double theta = acos((rot_mat.trace() - 1)/2);
+    double theta = acos((rot_mat.trace() - 1.0)/2.0);
     Eigen::Vector3d rot_vec(rot_mat(2, 1) - rot_mat(1, 2),
                             rot_mat(0, 2) - rot_mat(2, 0),
                             rot_mat(1, 0) - rot_mat(0, 1));
-    rot_vec = (theta / 2.0 *sin(theta)) * rot_vec;
+    rot_vec = (theta / (2.0*sin(theta))) * rot_vec;
 
     return rot_vec;
 }
@@ -37,12 +37,17 @@ Eigen::Matrix4d Math::TransformationVectorInverse(const Eigen::VectorXd& T_vecto
     Eigen::Matrix4d T;
     t = T_vector.block<3,1>(3,0);
     R = AxisVectorToMatrix(T_vector.block<3,1>(0,0));
-    T.setIdentity();
-    T.block<3,3>(0,0) = R.transpose();
-    T.block<3,1>(0,3) = -R.transpose()*t;
+    T = Math::RAndtToT(R.transpose(),-R.transpose()*t);
 
     return T;
 }
 
+Eigen::Matrix4d Math::RAndtToT(const Eigen::Matrix3d& R, const Eigen::Vector3d t) {
+    Eigen::Matrix4d T;
+    T.setIdentity();
+    T.block<3,3>(0,0) = R;
+    T.block<3,1>(0,3) = t;
+    return T;
+}
 
 }
